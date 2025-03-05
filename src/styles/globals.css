@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rich Text Styles */
+.kai-rich-text-content {
+  @apply max-w-full overflow-x-auto;
+}
+
+/* Table styles */
+.kai-rich-text-table-wrapper {
+  @apply overflow-x-auto my-4;
+}
+
+.kai-rich-text-table {
+  @apply w-full border-collapse my-4;
+}
+
+.kai-rich-text-table th,
+.kai-rich-text-table td {
+  @apply border border-gray-300 p-2;
+}
+
+.kai-rich-text-table th {
+  @apply bg-gray-100 font-semibold;
+}
+
+.kai-rich-text-table-row {
+  @apply border-b border-gray-200;
+}
+
+.kai-rich-text-table-row:hover {
+  @apply bg-gray-50;
+}
+
+.kai-rich-text-table-cell {
+  @apply border border-gray-300 p-2;
+}
+
+.kai-rich-text-table-header {
+  @apply border border-gray-300 p-2 bg-gray-100 font-semibold;
+}
+
+/* List styles */
+.kai-rich-text-ol {
+  @apply list-decimal pl-8 my-4 space-y-1;
+}
+
+.kai-rich-text-ul {
+  @apply list-disc pl-8 my-4 space-y-1;
+}
+
+.kai-rich-text-li {
+  @apply my-1;
+}
+
+/* Image styles */
+.kai-rich-text-image {
+  @apply max-w-full h-auto my-4;
+}
+
+.kai-rich-text-figure {
+  @apply my-4;
+}
+
+/* Linked item styles */
+.linked-item {
+  @apply border-l-4 border-blue-500 pl-4 my-4 py-2;
+}
+
+.linked-item h3 {
+  @apply text-lg font-semibold mb-2;
+}
+
+/* Heading styles */
+.kai-rich-text-h1 {
+  @apply text-3xl font-bold my-4;
+}
+
+.kai-rich-text-h2 {
+  @apply text-2xl font-bold my-3;
+}
+
+.kai-rich-text-h3 {
+  @apply text-xl font-semibold my-2;
+}
+
+.kai-rich-text-h4 {
+  @apply text-lg font-semibold my-2;
+}
+
+/* Paragraph styles */
+.kai-rich-text-p {
+  @apply my-2;
+}
+
+/* Link styles */
+.content-item-link {
+  @apply text-blue-600 underline;
+}
