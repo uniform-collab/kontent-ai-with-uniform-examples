@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: kaiRichtext
+name: K.ai RichText
+icon: screen
+parameters:
+  - id: kairichtext
+    name: kaiRichText
+    type: json
+    typeConfig: {}
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2025-03-05T13:14:43.036732+00:00'
+updated: '2025-03-05T13:14:43.036732+00:00'

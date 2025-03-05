@@ -1,0 +1,28 @@
+id: singleAuthor
+displayName: Single Author
+ttl: 30
+path: /items/${itemsCodenames}
+custom:
+  resolveLinkedContent: true
+  allowContentTypeCodeNames:
+    - untitled_content_type
+method: GET
+purgeKey: d76e6761-d87a-40af-8581-ed59b12472ae
+archetype: singleItem
+variables:
+  language:
+    type: text
+    default: ''
+    displayName: Language
+  itemsCodenames:
+    type: text
+    default: ''
+    displayName: Items Codenames
+parameters:
+  - key: depth
+    value: '1'
+  - key: language
+    value: ${language}
+    omitIfEmpty: true
+dataSourceId: kontentAi
+allowedOnComponents: []

@@ -3,6 +3,12 @@ composition:
   _id: 852664d7-7d35-4eb5-97ad-e1c23ce940ca
   _slug: /
   type: page
+  _dataResources:
+    Single Author Content:
+      type: singleAuthor
+      variables:
+        language: ''
+        itemsCodenames: artem
   _overrides:
     852664d7-7d35-4eb5-97ad-e1c23ce940ca:
       parameters:
@@ -96,44 +102,64 @@ composition:
     852664d7-7d35-4eb5-97ad-e1c23ce940ca|dc2e95be-21b5-4476-a309-f8a34922f528:
       slots:
         $slotSectionItems:
-          - _id: eebf1227-58aa-41c5-bfc4-089d94cebdba
-            type: fixedHero
+          - _id: 09bb5f76-bf24-4365-9dbb-91f8713c8932
+            type: kaiRichtext
             parameters:
-              image:
-                type: asset
-                value: []
-              titleTag:
-                type: dex-segmented-control-parameter
-                value: h1
-              titleText:
-                type: text
-                value: Component Starter Kit
+              kairichtext:
+                type: json
+                value: ${#jptr:/Single Author Content/item/elements/richtext}
+          - _id: a922002f-8e33-4f95-af3f-66a8c3aa06a2
+            type: banner
+            slots:
+              bannerContent:
+                - _id: 1b999ab6-3056-439c-bc0a-3351ef7df849
+                  type: text
+                  parameters:
+                    tag:
+                      type: dex-segmented-control-parameter
+                      value: h1
+                    size:
+                      type: dex-segmented-control-parameter
+                      value: {}
+                    text:
+                      type: text
+                      locales:
+                        en: Text
+                    color:
+                      type: dex-color-palette-parameter
+                      value: text-secondary
+                    weight:
+                      type: dex-segmented-control-parameter
+                      value: normal
+            parameters:
+              spacing:
+                type: dex-space-control-parameter
+                value:
+                  mobile: {}
+                  tablet: {}
+                  desktop: {}
+              iconColor:
+                type: dex-color-palette-parameter
+                value: general-color-2
               displayName:
                 type: text
-                value: Welcome Hero
-              descriptionText:
-                type: text
-                value: >-
-                  A rich set of components to supercharge building fast, modern,
-                  personalized experiences with Uniform DXP.
+                locales:
+                  en: test
+              backgroundColor:
+                type: dex-color-palette-parameter
+                value: general-color-2
               contentAlignment:
                 type: dex-segmented-control-parameter
                 value: center
-              eyebrowTitleText:
+          - _id: 292a8bc2-1c2c-4da6-a201-755c8ac3aaa6
+            type: bynderimage
+            parameters:
+              bynderImage:
                 type: text
-                value: Get your next project started on the right foot
-              primaryButtonLink:
-                type: link
-                locales:
-                  en:
-                    path: https://unfrm.to/csk-docs
-                    type: url
-              primaryButtonText:
-                type: text
-                value: Docs
+                value: ${#jptr:/Single Author Content/item/elements/title/value}
   _locales:
     - en
   _pattern: f9c058ea-c40d-4435-ac5a-53423cf654dc
-created: '2025-02-17T15:34:22.394086+00:00'
-modified: '2025-02-17T15:34:22.394086+00:00'
+created: '2025-03-05T13:09:09.329511+00:00'
+modified: '2025-03-05T15:27:05.167224+00:00'
 pattern: false

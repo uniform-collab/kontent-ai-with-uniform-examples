@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: bynderimage
+name: BynderImage
+icon: screen
+parameters:
+  - id: bynderImage
+    name: Bynder Image
+    type: text
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2025-03-05T15:16:42.129211+00:00'
+updated: '2025-03-05T15:16:42.129211+00:00'
